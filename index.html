@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="main-div">
+  <h1 class="sub-heading">Alarm Clock</h1>
+  <div id="clock">
+    <span>Time:  </span><strong><span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span><span id="currampm"> 00</span></strong>
+  </div>
+  <h1 class="sub-heading">Set Alarm</h1>
+  <div id="alarm-form">
+    <input type="number" id="alarm-hour" placeholder="Hour" min="0" max="24">
+    <input type="number" id="alarm-minute" placeholder="Min" min="0" max="60">
+    <input type="number" id="alarm-second" placeholder="Sec" min="0" max="60">
+    <select id="am-pm">
+      <option value="AM">AM</option>
+      <option value="PM">PM</option>
+    </select>
+    <button id="set-alarm">Set Alarm</button>
+  </div>
+  <h1 class="sub-heading">Alarms List</h1>
+  <ul id="alarms">
+    <!-- Alarm items will be added dynamically here -->
+  </ul>
+</div>
+  <script src="index.js"></script>
+</body>
+</html>
